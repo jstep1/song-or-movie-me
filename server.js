@@ -20,7 +20,7 @@ app.use(logger("dev"));
 app.use(bodyParser());
 
 // Database configuration
-var databaseUrl = process.env.MONGODB_URI || "songs_db";
+var databaseUrl = process.env.MONGODB_URI || "mongodb://localhost/songormovieme";
 var collections = ["songs"];
 
 // Hook mongojs config to db variable
